@@ -8,6 +8,7 @@ function handleClick(event) {
 }
 
 async function handleFetchUrl(url) {
+  document.querySelector('.content').innerText = 'Carregando';
   const pageResults = await fetch(url);
   const pageText = await pageResults.text();
 
